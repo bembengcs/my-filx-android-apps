@@ -31,15 +31,15 @@ object Versions {
     const val exoplayer = "2.18.1"
 
     // Testing
-    const val junit = "4.13.2"
-    const val androidTestJunit = "1.1.3"
+    const val jUnit = "4.13.2"
+    const val androidTestJUnit = "1.1.3"
     const val espresso = "3.4.0"
 
 }
 
 object AndroidLibraries {
     const val coreKtx = "androidx.core:core-ktx:${Versions.coreKtx}"
-    const val androidxAppcompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
+    const val androidxAppCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
     const val androidxConstraintLayout =
         "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
     const val lifecycleRuntimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
@@ -71,8 +71,8 @@ object AndroidLibraries {
 }
 
 object TestingLibraries {
-    const val jUnit = "junit:junit:${Versions.junit}"
-    const val androidJUnit = "androidx.test.ext:junit:${Versions.androidTestJunit}"
+    const val jUnit = "junit:junit:${Versions.jUnit}"
+    const val androidJUnit = "androidx.test.ext:junit:${Versions.androidTestJUnit}"
     const val espressoCore = "androidx.test.espresso:espresso-core:${Versions.espresso}"
 }
 
