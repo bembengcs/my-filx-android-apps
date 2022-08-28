@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
 import androidx.viewbinding.ViewBinding
+import com.example.core.utils.getErrorMessage
 
 abstract class BaseActivity<B : ViewBinding, VM : ViewModel>(
     val bindingFactory: (LayoutInflater) -> B
@@ -30,7 +31,7 @@ abstract class BaseActivity<B : ViewBinding, VM : ViewModel>(
 
     open fun showError(isErrorEnabled: Boolean, exception: Exception) {
         if (isErrorEnabled) {
-            Toast.makeText(this, "", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getErrorMessage(exception), Toast.LENGTH_SHORT).show()
         }
     }
 
